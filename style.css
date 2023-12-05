@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillium+web:wghtw200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'arial';
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: autp;
+}
+
+.navBar{
+    background-color: #2c2c2c;
+    padding: 1rem;
+    position: relative;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+
+.navBar div{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+}
+
+.logo{
+    color: #fff;
+}
+.logo span{
+    background-image: linear-gradient(45deg, #6600ff, #0095ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-icon-container{
+    display: flex;
+    align-items: center;
+}
+.nav-icon-container img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.nav-icon-container img:first-child{
+    margin-right: 1rem;
+}
+
+nav ul li{
+    color:#fff;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+} 
+
+.menu-button{
+    display: none;
+}
+
+header{
+    background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+.header-button-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.header-button-side-left{
+    height: 100%;
+    flex-basis:50%;
+}
+
+.header-button-side-left h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-button-side-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-button-side-left button{
+    background-color: #0095ff; 
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.header-button-side-left button:hover{
+    background-color: #004c94;
+}
+
+.header-button-side-right{
+    flex-basis: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-button-side-right img{
+    width: 115%;
+}
+.swiper {
+    width: 600px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    display: flex;
+  }
+
+.swiper-wrapper{
+    border: none;
+    align-items: center;
+}
+
+/*Tablet e celular*/
+@media(max-widht:800px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .header-button-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav{
+        position: absolute;
+        background-color:#2c2c2c;
+        width: 100%;
+        top: 46px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+.cols{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.cols-3{
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.cols-3 img{
+    max-width: 100%;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background: #0084ff;
+    border-radius:9999px ;
+    margin: 8px auto 0 auto;
+}
+
+.product{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    justify-items: flex-start;
+}
+
+.product img{
+    height: 250px;
+}
+
+

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    html,body{
+        width: 100%;
+        overflow-y: hidden;
+        background-color:  #201b2c;
+        }
+
+    .center{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        margin: 0  auto;
+        padding: 0 2%;
+    }
+
+    header{
+        height: 200px;
+        padding: 20px 0;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    .menu{
+        padding-top: 30px;
+        width: 50%;
+        text-align: right;
+    }
+
+    .menu a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    section.sobre{
+        position: relative;
+        height: calc(100% - 200px);
+    }
+
+    .extras{
+        border-radius: 100% 0% 0% 0%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 650px;
+        height: 550px;
+        background-image: linear-gradient(45deg, #FF2500, #FF7100);
+    }
+
+    .sociais{
+        position: absolute;
+        right: 0px;
+        top: 200px;
+        text-align: right;
+    }
+
+    .sociais img{
+        display: block;
+        width: 40px;
+        margin: 20px 0;
+
+    }
+
+    .texto{
+        margin-top: 40px;
+    }
+
+    .texto h1{
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .texto p{
+        margin: 20px 0;
+        color: #f0ffffde;
+        font-size: 14px;
+        font-weight:bold;
+        max-width: 600px;
+    }
+
+    .texto button{
+        border: 0;
+        background-color: #017143;
+        color: white;
+        border-radius: 10px;
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .texto span{
+        background-image: linear-gradient(45deg, #FF2500, #FF7100);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
